@@ -14,14 +14,26 @@
 /* remove bullets */
 ul {
   list-style: none;
+  /* margin: 0;
+  padding: 0; */
 }
 /* remove link underline */
 a {
   text-decoration: none;
 }
-/* button style */
-button {
+
+/* buttons style */
+.button {
   font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87em;
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--font-bg-color);
 }
 
 body {
@@ -30,6 +42,7 @@ body {
   background-color: var(--bg-color-primary);
 }
 
+/* page header */
 .page-header {
   font-weight: 500;
   font-size: 14px;
@@ -38,6 +51,13 @@ body {
   color: var(--theme-color);
   background-color: var(--font-bg-color);
 }
+/* header container */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* logo styles in header and footer*/
 .logo {
   font-family: "Raleway", "Verdana", sans-serif;
@@ -88,6 +108,8 @@ body {
   background-color: var(--bg-color-add);
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
@@ -95,18 +117,13 @@ body {
   color: var(--font-bg-color);
 }
 .hero .button {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87em;
-  color: var(--font-bg-color);
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
   background-color: var(--accent-color);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
 }
 .hero .button:hover,
 .hero .button:focus {
-  color: var(--font-bg-color);
   --accent-color: #188ce8;
   background-color: var(--accent-color);
 }
@@ -119,6 +136,8 @@ body {
 }
 .features-title {
   visibility: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .features-subtitle {
   font-weight: bold;
