@@ -14,8 +14,8 @@
 /* remove bullets */
 ul {
   list-style: none;
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
 }
 /* remove link underline */
 a {
@@ -57,9 +57,17 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+}
 
 /* logo styles in header and footer*/
 .logo {
+  margin-right: 93px;
   font-family: "Raleway", "Verdana", sans-serif;
   font-weight: bold;
   font-size: 26px;
@@ -75,11 +83,21 @@ body {
 }
 
 /* navbox and authnav in header*/
+.navbox {
+  display: flex;
+  align-items: center;
+}
 .navbox.authnav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
+}
+/* .navbox .item {
+} */
+
+.navbox .item:not(:last-child) {
+  margin-right: 50px;
 }
 .navbox .nav-link {
   color: var(--secondary-color);
@@ -91,7 +109,14 @@ body {
 .navbox .nav-link.current {
   color: var(--accent-color);
 }
-
+/* header links list */
+.authnav {
+  display: flex;
+  margin-left: auto;
+}
+.authnav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .authnav-link {
   color: var(--theme-color);
 }
@@ -103,6 +128,8 @@ body {
 
 /* hero section */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--bg-color-add);
@@ -129,6 +156,8 @@ body {
 }
 /* features section */
 .features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
@@ -138,16 +167,28 @@ body {
   visibility: hidden;
   margin-top: 0;
   margin-bottom: 0;
+  line-height: 0;
 }
 .features-subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14em;
   text-transform: uppercase;
   color: var(--secondary-color);
 }
+.features-section p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* activities section */
+.activ-section {
+  padding-bottom: 94px;
+}
 .activ-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17em;
@@ -157,6 +198,8 @@ body {
 }
 /* team members section */
 .members-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   font-size: 16px;
   line-height: 1.19em;
   text-align: center;
@@ -164,6 +207,8 @@ body {
   background-color: var(--bg-color-secondary);
 }
 .members-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17em;
@@ -173,6 +218,8 @@ body {
   background-color: var(--font-bg-color);
 }
 .members-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19em;
